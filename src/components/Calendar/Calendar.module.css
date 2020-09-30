@@ -1,0 +1,88 @@
+.container {
+  padding: 1rem 0;
+  display: flex;
+}
+.innerContainer {
+  width: 25rem;
+  border: 6px solid #1e88e5;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.calendarBody {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: lightblue;
+}
+
+.cell {
+  width: 14%;
+  margin: 0.04rem;
+}
+.next {
+  width: 0;
+  height: 0;
+  border-left: 2.2rem solid green;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-right: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 0.5rem;
+}
+.previous {
+  width: 0;
+  height: 0;
+  border-right: 2.2rem solid green;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-left: none;
+  background-color: transparent;
+  outline: none;
+  margin-right: 0.5rem;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e88e5;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+/*
+.moveHeaderToLeft {
+  transform: translateX(-1.5rem);
+}
+*/
+/*
+.summery {
+  width: 22rem;
+  min-height: 22rem;
+  transform: translateX(-1.5rem);
+  padding: 1rem;
+  background-color: lightgray;
+}
+*/
+
+.backBtn {
+}
+@media screen and (min-width: 1024px) {
+  .innerContainer {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cell {
+    width: 13%;
+  }
+}

@@ -1,0 +1,87 @@
+.container {
+  background: url(../../../src/images/pig.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.form-container {
+  width: 5rem;
+}
+
+.btn,
+.btn:active,
+.btn:focus {
+  outline: none;
+  border: none;
+}
+.holder {
+  position: relative;
+}
+.errors {
+  position: absolute;
+  top: 4rem;
+
+  padding: 1rem;
+  background-color: #ffc0cb;
+  color: red;
+  font-weight: 200;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  transition: all 2s;
+}
+
+.usernameError {
+  left: 1.5rem;
+  width: 13.5rem;
+}
+.passwordError {
+  left: 15.5rem;
+  width: 14.5rem;
+}
+.invalid {
+  opacity: 0.6;
+}
+.status {
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px black;
+  top: -15rem;
+  left: 10rem;
+  background-color: #98fb98;
+  width: 27rem;
+  padding: 1.2rem 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #008000;
+  animation: open 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.center {
+  display: table;
+  margin: 0 auto;
+}
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
