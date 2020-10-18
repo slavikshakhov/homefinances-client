@@ -168,6 +168,7 @@ const Start = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
+        mode: "no-cors",
       };
 
       if (registerMode) {
@@ -190,6 +191,7 @@ const Start = () => {
       if (loginMode) {
         let resp = await fetch(
           "https://homefinances-database.herokuapp.com/auth/login",
+          // "http://localhost:4000/auth/login",
           requestOptions
         );
 
