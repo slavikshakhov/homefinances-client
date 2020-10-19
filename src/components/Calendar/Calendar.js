@@ -123,6 +123,7 @@ const Calendar = ({ balanceForToday, calendarPopup }) => {
       year,
       month
     );
+    console.log(filteredBalancesMonthYear);
     setFilteredBalances(filteredBalancesMonthYear);
   }, [selectedMonth, balances]);
 
@@ -171,9 +172,10 @@ const Calendar = ({ balanceForToday, calendarPopup }) => {
   const showDataForSelectedDate = (y, m, d) => {
     console.log(y, m, d);
     m =
-      m.toString().length <= 1 ? `0${(m + 1).toString()}` : (m + 1).toString();
+      (m + 1).toString().length <= 1 ? `0${(m + 1).toString()}` : (m + 1).toString();
     d = d.toString().length <= 1 ? `0${d.toString()}` : d;
     const fullDate = y + "-" + m + "-" + d;
+    console.log(fullDate);
     let thisDayExpenses = null;
     Object.keys(expenses).map((exp) => {
       if (exp === fullDate) {
@@ -196,10 +198,11 @@ const Calendar = ({ balanceForToday, calendarPopup }) => {
   };
 
   const renderCalendar = () => {
+    console.log(filteredBalances);
     const cells = [];
     let index = firstDayOfWeek;
     let x = 1;
-    const zero = selectedMonth.toString().length === 1 ? "0" : "";
+    const zero = (selectedMonth + 1).toString().length === 1 ? "0" : "";
     cells.push(
       <div className={`${CalendarStyles.cell} bg-green-300 text-center`}>
         Sun
