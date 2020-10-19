@@ -169,8 +169,8 @@ const Start = () => {
       const requestOptions = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(user),
-        mode: "no-cors",
+        body: JSON.stringify(user)
+        //mode: "no-cors",
       };
 
       if (registerMode) {
