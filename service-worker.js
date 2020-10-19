@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/homefinances-client/precache-manifest.8673145acf5314d38b76006c9faabbe5.js"
+  "/homefinances-client/precache-manifest.546a3e3450a392c80a3fe14bf89c59c1.js"
 );
 
 self.addEventListener('message', (event) => {
