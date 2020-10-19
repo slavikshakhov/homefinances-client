@@ -2,8 +2,10 @@ import React, { useState, useEffect, useContext } from "react";
 import CalendarStyles from "./Calendar.module.css";
 import Day from "../Day/Day";
 import { DataContext } from "../DataProvider";
+import {config} from '../../Constants';
 
 const Calendar = ({ balanceForToday, calendarPopup }) => {
+   var URL = config.url.API_URL
   const date = new Date();
   const currentYear = date.getFullYear();
   const currentMonth = date.getMonth();
@@ -62,7 +64,7 @@ const Calendar = ({ balanceForToday, calendarPopup }) => {
 
   useEffect(() => {
     console.log("mounted");
-    fetch(`http://localhost:4000/balances/${decodedToken.id}`)
+    fetch(`${URL}/balances/${decodedToken.id}`)
       .then((resp) => resp.json())
       .then((balances) => {
         if (balances) {
@@ -78,7 +80,7 @@ const Calendar = ({ balanceForToday, calendarPopup }) => {
           setBalances([]);
         }
       });
-    fetch(`http://localhost:4000/incomes/${decodedToken.id}`)
+    fetch(`${URL}/incomes/${decodedToken.id}`)
       .then((resp) => resp.json())
       .then((incomes) => {
         const incomesWithoutTime =
@@ -95,7 +97,7 @@ const Calendar = ({ balanceForToday, calendarPopup }) => {
         console.log(incomesGroupedByDate);
         setIncomes(incomesGroupedByDate);
       });
-    fetch(`http://localhost:4000/expenses/${decodedToken.id}`)
+    fetch(`${URL}/expenses/${decodedToken.id}`)
       .then((resp) => resp.json())
       .then((expenses) => {
         if (expenses) {

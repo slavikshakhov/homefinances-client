@@ -6,8 +6,10 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Calendar from "../Calendar/Calendar";
 import { DataContext } from "../DataProvider";
+import {config} from '../../Constants';
 
 const Home = () => {
+   var URL = config.url.API_URL
   const {
     removeToken,
     decodedToken,
@@ -33,7 +35,7 @@ const Home = () => {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:4000/balances/${decodedToken.id}`)
+    fetch(`${URL}/balances/${decodedToken.id}`)
       .then((resp) => resp.json())
       .then((data) => {
         console.log(data);
@@ -102,7 +104,7 @@ const Home = () => {
         }),
       };
 
-      fetch(`http://localhost:4000/${activity}/new`, requestOptions)
+      fetch(`${URL}/${activity}/new`, requestOptions)
         .then((resp) => resp.json())
         .then((data) => {
           console.log(data);
@@ -138,7 +140,7 @@ const Home = () => {
         UserId: decodedToken.id,
       }),
     };
-    fetch("http://localhost:4000/balances/new", requestOptions)
+    fetch(`${URL}/balances/new`, requestOptions)
       .then((resp) => resp.json())
       .then((data) => {
         console.log("balance updated");

@@ -2,8 +2,10 @@ import React, { useState, useEffect, useContext } from "react";
 import StartStyles from "./Start.module.css";
 import { useHistory } from "react-router-dom";
 import { DataContext } from "../DataProvider";
+import {config} from '../../Constants';
 
 const Start = () => {
+   var URL = config.url.API_URL
   const history = useHistory();
 
   const validationRulres = {
@@ -173,7 +175,7 @@ const Start = () => {
 
       if (registerMode) {
         let resp = await fetch(
-          "http://localhost:4000/auth/register",
+          `${URL}/auth/register`,
           requestOptions
         );
         if (resp.status === 400) {
@@ -190,7 +192,7 @@ const Start = () => {
 
       if (loginMode) {
         let resp = await fetch(
-          "https://homefinances-database.herokuapp.com/auth/login",
+          `${URL}/auth/login`,
           // "http://localhost:4000/auth/login",
           requestOptions
         );
