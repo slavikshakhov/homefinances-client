@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/homefinances-client/static/css/main.20713a1c.chunk.css",
-    "main.js": "/homefinances-client/static/js/main.3d70ceb7.chunk.js",
-    "main.js.map": "/homefinances-client/static/js/main.3d70ceb7.chunk.js.map",
+    "main.js": "/homefinances-client/static/js/main.81697d08.chunk.js",
+    "main.js.map": "/homefinances-client/static/js/main.81697d08.chunk.js.map",
     "runtime-main.js": "/homefinances-client/static/js/runtime-main.006d565a.js",
     "runtime-main.js.map": "/homefinances-client/static/js/runtime-main.006d565a.js.map",
     "static/css/2.2a60accc.chunk.css": "/homefinances-client/static/css/2.2a60accc.chunk.css",
     "static/js/2.4b34a6c5.chunk.js": "/homefinances-client/static/js/2.4b34a6c5.chunk.js",
     "static/js/2.4b34a6c5.chunk.js.map": "/homefinances-client/static/js/2.4b34a6c5.chunk.js.map",
     "index.html": "/homefinances-client/index.html",
-    "precache-manifest.274c071c3d450852ef6597b351d5ece9.js": "/homefinances-client/precache-manifest.274c071c3d450852ef6597b351d5ece9.js",
+    "precache-manifest.546a3e3450a392c80a3fe14bf89c59c1.js": "/homefinances-client/precache-manifest.546a3e3450a392c80a3fe14bf89c59c1.js",
     "service-worker.js": "/homefinances-client/service-worker.js",
     "static/css/2.2a60accc.chunk.css.map": "/homefinances-client/static/css/2.2a60accc.chunk.css.map",
     "static/css/main.20713a1c.chunk.css.map": "/homefinances-client/static/css/main.20713a1c.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.2a60accc.chunk.css",
     "static/js/2.4b34a6c5.chunk.js",
     "static/css/main.20713a1c.chunk.css",
-    "static/js/main.3d70ceb7.chunk.js"
+    "static/js/main.81697d08.chunk.js"
   ]
 }
