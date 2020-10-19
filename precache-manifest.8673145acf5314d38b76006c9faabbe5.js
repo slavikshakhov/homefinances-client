@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9cb85b876cc10a015d59468fec8e3d26",
+    "revision": "3f4100d69ba5830e4c51f6f81a0af9b8",
     "url": "/homefinances-client/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/homefinances-client/static/css/2.2a60accc.chunk.css"
   },
   {
-    "revision": "3e4e362943948b5f5552",
+    "revision": "cc4e015101b70c23decc",
     "url": "/homefinances-client/static/css/main.20713a1c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/homefinances-client/static/js/2.4b34a6c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e4e362943948b5f5552",
-    "url": "/homefinances-client/static/js/main.81697d08.chunk.js"
+    "revision": "cc4e015101b70c23decc",
+    "url": "/homefinances-client/static/js/main.77275563.chunk.js"
   },
   {
     "revision": "b012e4d026f01a8b71f4",
